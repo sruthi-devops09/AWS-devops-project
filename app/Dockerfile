@@ -1,1 +1,5 @@
-#This is docker file
+FROM node:16-alpine
+WORKDIR /app
+COPY . .
+RUN npm install
+CMD ["node", "index.js"]
